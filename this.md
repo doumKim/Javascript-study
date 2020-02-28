@@ -382,13 +382,13 @@ callback()은 setTimeout() 함수가 실행시키는 것이므로 setTimeout()�
 
 ```
 function hello() {
-setTimeout(() => {
-console.log(this.name)
+  setTimeout(() => {
+  console.log(this.name)
 })
 }
 var obj = {
-name: 'chris',
-hello: hello
+  name: 'chris',
+  hello: hello
 };
 var name = 'global contenxt!'
 
